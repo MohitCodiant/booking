@@ -69,7 +69,7 @@ const Login = () => {
         };
 
         $ajax_post(
-          `getUserByEmail/${formData.email || formData.email?.identifier}`,
+          `getUserByEmail?identifier=${encodeURIComponent(formData.email || formData.email?.identifier)}`,
           {},
           async function (response) {
             try {
