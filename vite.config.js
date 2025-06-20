@@ -20,7 +20,7 @@ export default defineConfig({
     // strictPort: true,
     // open: true,
     proxy: {
-      '/api': {
+      '/pages/api': {
         // target: 'http://localhost:5056',
         target: 'https://booking-omega-nine.vercel.app',
         changeOrigin: true,
