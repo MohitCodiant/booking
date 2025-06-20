@@ -46,7 +46,7 @@ export const $ajax_post = (ref, data, successcallback, errorcallback, options) =
 
     // axios.post();    
     const fetchData = async (len) => {
-        let API_URL = "/api";//"https://apicr4-main.vercel.app/";
+        let API_URL = "/pages/api";//"https://apicr4-main.vercel.app/";
         if (typeof CUSTOM_API_URL !== "undefined") {
             if (isset(CUSTOM_API_URL)) {
                 API_URL = CUSTOM_API_URL;
